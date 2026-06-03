@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deliveroo Support Bot</title>
+</head>
+<body>
+
+<h1>Deliveroo Support Bot</h1>
+<p>Try the chatbot in the bottom-right corner.</p>
+
+<script type="text/javascript">
+(function(d, t) {
+  var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+  v.onload = function() {
+    window.voiceflow.chat.load({
+      verify: { projectID: '69bd180bdfc7a14c4acd125c' },
+      url: 'https://general-runtime.voiceflow.com',
+      versionID: 'production',
+      voice: {
+        url: "https://runtime-api.voiceflow.com"
+      }
+    });
+  }
+  v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs";
+  v.type = "text/javascript";
+  s.parentNode.insertBefore(v, s);
+})(document, 'script');
+</script>
+
+</body>
+</html>
